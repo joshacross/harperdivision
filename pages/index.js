@@ -1,4 +1,5 @@
 import Hero from 'components/home/Hero';
+import Contact from 'components/common/Contact';
 import ValueServices from 'components/home/ValueServices';
 import ClickApproval from 'components/common/ClickApproval';
 import CTA from 'components/home/CTA';
@@ -11,7 +12,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ValueServices />
+      <Contact />
+      {/* <ValueServices />
       <ClickApproval />
       <CTA />
       <Advocacy />
@@ -22,8 +24,8 @@ export default function Home() {
           <Image src={teamImage} alt="30 plus person team in business attire smiling standing in a large formal event space in front of Nashville city backdrop" />
         </div>
       </div>
-      </div>
-      <Footer />
+      </div> */}
+      {/* <Footer /> */}
     </>
   )
 }

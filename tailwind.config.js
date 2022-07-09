@@ -4,7 +4,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'prmi-blue': '#4F758B',
+      },
+    },
   },
   plugins: [],
 }

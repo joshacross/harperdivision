@@ -1,13 +1,18 @@
 import Image from "next/image";
 import keyDoorImage from "assets/images/keyDoorImage.jpeg";
 import waveTheFlagImage from "assets/images/wavingtheflag.jpeg";
+import americanFlagBackgroundImage from 'assets/images/americanflagbackground.png';
 import Contact from "components/common/Contact";
 
 export default function VA() {
   return (
     <>
-      <section className="prose flex flex-col md:container md:mx-auto m-8 shadow-lg p-10 bg-slate-300">
+      <div className="flex content-center justify-center">
+      <Image src={americanFlagBackgroundImage} alt="american flag against a concrete wall"/>
+      </div>
+      <section className="prose flex flex-col md:container md:mx-auto m-8 p-10">
         <article>
+
           <h1>VA Loans</h1>
           <h2>Helping Veterans Achieve Homeownership</h2>
           <p className="text-2xl italic">
@@ -20,7 +25,8 @@ export default function VA() {
             than most.
           </p>
           <h2>Loan Highlights</h2>
-          <div className="flex md:block sm:block xs:block">
+          <div className="flex">
+          <div>
           <ul className="md:text-2xl sm:text-xl">
             <li>100% financing*</li>
             <li>Lower interest rates</li>
@@ -32,11 +38,13 @@ export default function VA() {
               VA Funding Fee can be financed or waved for disabled veterans
             </li>
           </ul>
-        
+          </div>
+          <div>
           <Image
             src={keyDoorImage}
             alt="close up set of keys inside an open door"
           />
+          </div>
           </div>
           <h2>
             A loan program specifically designed for Veterans, service members
@@ -47,7 +55,7 @@ export default function VA() {
         </article>
         <article>
           <h2>Loan Eligibility</h2>
-          <div className="flex md:block sm:block xs:block">
+          <div className="flex">
           <Image
             src={waveTheFlagImage}
             alt="a dad and son holding a flag together in formal attire waiving a flag"

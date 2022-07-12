@@ -7,7 +7,7 @@ import Contact from "components/common/Contact";
 export default function VA() {
   return (
     <>
-      <div className="flex content-center justify-center">
+      <div className="flex content-center justify-center max-h-96	max-w-full">
       <Image src={americanFlagBackgroundImage} alt="american flag against a concrete wall"/>
       </div>
       <section className="prose flex flex-col md:container md:mx-auto m-8 p-10">
@@ -24,6 +24,10 @@ export default function VA() {
             market knowledge allows us to offer better VA loan terms and rates
             than most.
           </p>
+          <div className="flex justify-center flex-col">
+          <a href="#" className="text-3xl hover:bg-slate-400 hover:text-white text-center no-underline border-4 p-4 border-slate-700	rounded-lg">Check My Veteran Eligibility*</a>
+          <p className="text-center">*Checking your eligilibiy will not affect credit eligibility or status. To learn more, please see our terms and conditions, give us a call at (615) 822-6220, or reach out to support at <a className="no-underline" href="mailto:support@theharperdivision.com">support@theharperdivision.com.</a></p>
+          </div>
           <h2>Loan Highlights</h2>
           <div className="flex">
           <div>

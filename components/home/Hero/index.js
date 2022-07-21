@@ -2,10 +2,10 @@ export default function Hero() {
 
 return (
     <>
-        <div className="relative bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div className="sm:text-center lg:text-left">
+      <div className="relative bg-whited overflow-hidden">
+      <div className="mx-auto">
+          <main className="mx-auto px-4 sm:mt-12 sm:px-6 lg:px-8">
+            <div className="sm:text-center lg:text-left w-1/2">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Reengineer the</span>{' '}
                 <span className="block text-sky-800 xl:inline">Mortgage Process</span>

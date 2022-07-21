@@ -2,7 +2,8 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import Apply from 'components/common/Apply';
+import logo from 'assets/images/logo.png'
+import Image from 'next/image';
 
 const navigation = [
   { name: 'About', href: '/about' },
@@ -10,6 +11,8 @@ const navigation = [
   { name: 'Partners', href: '/partners' },
   { name: 'Contact', href: '/contact' },
 ]
+
+const svgLogo = {}
 
 export default function Hero() {
   return (
@@ -33,14 +36,16 @@ export default function Hero() {
                   <div className="flex items-center justify-between w-full md:w-auto">
                     <a href="#">
                       <span className="sr-only">Workflow</span>
-                      <img
+                      <Image
                         alt="Workflow"
                         className="h-8 w-auto sm:h-10"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                        src={logo}
+                        width={50}
+                        height={60}
                       />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500">
                         <span className="sr-only">Open main menu</span>
                         <MenuIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -53,7 +58,7 @@ export default function Hero() {
                       {item.name}
                     </a>
                   ))}
-                  <a href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  <a href="/login" className="font-medium text-sky-700 hover:text-sky-500">
                     Log in
                   </a>
                 </div>
@@ -115,7 +120,7 @@ export default function Hero() {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Reengineer the</span>{' '}
-                <span className="block text-indigo-600 xl:inline">Mortgage Process</span>
+                <span className="block text-sky-800 xl:inline">Mortgage Process</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
@@ -125,7 +130,7 @@ export default function Hero() {
                 <div className="rounded-md shadow">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-800 hover:bg-sky-700 md:py-4 md:text-lg md:px-10"
                   >
                     Find a Mortgage Engineer
                   </a>
@@ -133,9 +138,9 @@ export default function Hero() {
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="#"
-                    className="w-full flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-sky-700 bg-sky-100 hover:bg-sky-200 md:py-4 md:text-lg md:px-10"
                   >
-                    <Apply />
+                    Receive a Complimentary Quote
                   </a>
                 </div>
               </div>

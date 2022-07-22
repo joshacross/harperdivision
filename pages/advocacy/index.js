@@ -1,4 +1,5 @@
 import Header from 'components/common/Header';
+import Nav from 'components/common/Nav';
 
 export default function advocacy() {
   return (

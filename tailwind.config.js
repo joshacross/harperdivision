@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'prmi-blue': '#4F758B',
+        'sky-700': '#4F758B',
       },
     },
   },

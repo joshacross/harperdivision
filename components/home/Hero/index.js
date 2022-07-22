@@ -1,9 +1,9 @@
+import Nav from 'components/common/Nav';
+
 export default function Hero() {
 
 return (
     <>
-      <div className="relative bg-whited overflow-hidden">
-      <div className="mx-auto">
           <main className="mx-auto px-4 sm:mt-12 sm:px-6 lg:px-8 mb-10 lg:mr-10">
             <div className="sm:text-center lg:text-left lg:w-1/2">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -40,8 +40,6 @@ return (
           src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
           alt=""
         />
-      </div>
-      </div>
       </div>
     </>
   )

@@ -19,7 +19,9 @@ export default function Contact() {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span>131 Saundersville Drive, Suite 140 
+              <span>The Harper Division
+                <br />
+                131 Saundersville Drive, Suite 140 
                 <br />
                 Hendersonville, TN 37075
                 </span> 
